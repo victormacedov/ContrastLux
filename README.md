@@ -52,7 +52,7 @@ pip install requirements.txt
 Execute o script principal:
 
 ```bash
-python contrastlux.py
+python main.ipynb
 ```
 
 1. Uma janela será aberta para selecionar a imagem.
