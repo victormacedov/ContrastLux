@@ -9,10 +9,10 @@
 * **Upload de imagens**: suporta JPEG, PNG, BMP e TIFF.
 * **Controle de brilho e contraste**: sliders interativos para ajustes em tempo real.
 * **Visualização antes/depois**: compara a imagem original com a imagem ajustada lado a lado.
-* **CLAHE opcional**: preserva detalhes em áreas escuras e claras.
+* **CLAHE opcional**: preserva detalhes em áreas escuras e claras, podendo ser ativado/desativado com a tecla `C`.
 * **Reset rápido**: tecla `R` para restaurar brilho e contraste aos valores padrão.
-* **Alternar CLAHE**: tecla `C` para ativar ou desativar o CLAHE.
 * **Salvar imagem editada**: exporta a imagem em JPEG, PNG, BMP ou TIFF.
+* **Zoom**: aumente ou diminua o zoom da imagem com as teclas `+` e `-`, visualizando o nível de zoom na interface.
 
 ---
 
@@ -33,14 +33,14 @@
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/ContrastLux.git
+git clone https://github.com/victormacedov/ContrastLux.git
 cd ContrastLux
 ```
 
 2. Instale as dependências:
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 *(Tkinter geralmente já vem com Python; caso não tenha, instale conforme seu SO.)*
@@ -59,8 +59,9 @@ python main.ipynb
 2. Ajuste o **brilho** e o **contraste** com os sliders.
 3. Pressione **C** para ativar/desativar CLAHE e observar a preservação de detalhes.
 4. Pressione **R** para resetar brilho e contraste aos valores padrão.
-5. Pressione **Esc** para fechar a janela.
-6. Escolha onde salvar a imagem editada quando solicitado.
+5. Use `+` ou `-` para ajustar o zoom da imagem.
+6. Pressione **Esc** para fechar a janela.
+7. Escolha onde salvar a imagem editada quando solicitado.
 
 ---
 
@@ -74,10 +75,15 @@ python main.ipynb
 
 ## 🔑 Atalhos de Teclado
 
-| Tecla | Função                                         |
-| ----- | ---------------------------------------------- |
-| `C`   | Alternar CLAHE ON/OFF                          |
-| `R`   | Resetar brilho e contraste para valores padrão |
-| `Esc` | Fechar aplicação                               |
+| Tecla  | Função                                              |
+|--------|-----------------------------------------------------|
+| `C`    | Alternar CLAHE ON/OFF                               |
+| `R`    | Resetar brilho e contraste para valores padrão      |
+| `+`/`-`| Aumentar ou diminuir o zoom                         |
+| `Esc`  | Fechar aplicação                                    |
 
 ---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
